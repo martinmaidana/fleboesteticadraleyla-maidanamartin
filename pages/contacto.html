@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="./assets/icons/mini-logo.jpg">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body  class="parallax">
+        <header class="header">
+        <div class="header__content">
+            <a href="../index.html"><img src="../assets/icons/pixlr-bg-result.png" alt="logo" class="logo"></a>
+            <h1>DRA. LEYLA FLEBOESTETICA </h1>
+            <h2 class="header__content--flebo">Flebología- Linfología - Medicina Estética Integral</h2>
+            <h2 class="header__content--text">CONTACTO</h2>
+        </div>
+        <nav class="nav">
+            <ul class="nav__content">
+                <li class="navhov"><a href="../index.html" class="nav__content--a">MENU PRINCIPAL</a>
+                </li>
+                <span>|</span>
+                <li class="navhov"><a href="./tratamientos.html" class="nav__content--a ">TRATAMIENTOS</a>
+                </li>
+                <span>|</span>
+                <li class="navhov"><a href="./Cuidados.html" class="nav__content--a">CUIDADOS</a>
+                </li>
+                <span>|</span>
+                <li class="navhov"><a href="./quienes-somos.html" class="nav__content--a">¿QUIENES SOMOS?</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main >
+        <form class="grid__formulario" id="Formulario" action="" method="">
+           <div class="grid__nya">
+               <label for="nombre">Nombre y Apellido:
+               </label>
+               
+               <input type="text" id="nombre"  placeholder="Ingrese nombre y apellido"/>
+           </div>
+           <div class="grid__numero">
+              <label for="number">número de Teléfono:</label>
+              
+              <input type="number" id="number"  placeholder="Ingrese nro. de tel."/> 
+           </div>
+           <div class="grid__email">
+               <label for="email">Email:</label>
+               
+               <input type="email" id="email" name="email" placeholder="Ingrese E-mail"/>
+            </div>
+            <div class="grid__consulta">
+                <label for="consulta">¿Cuál es su consulta?.</label>
+                
+                <textarea name="consulta" id="consulta" cols="90" rows="15" placeholder="Mensaje"></textarea>
+            </div>
+            <div class="grid__centromedico">
+                <label for="centro-medico">Centro médico al cual desea sacar turno:</label>
+                
+                <select name="centro-medico" id="centro-medico">
+                    <option value="Nordelta">Nordelta</option>
+                    <option value="San Isidro">San Isidro</option>
+                    <option value="Pacheco">Pacheco</option>
+                </select>
+            </div>
+            <div class="grid__news">
+                <label for="newsletter">¿Desea suscribirse a nuestro newsletter?</label>
+                <input type="checkbox" id="newaletter">
+            </div>
+            <div class="grid__seguro">
+               <fieldset>
+                   <legend>Su consulta es particular o tiene Obra Social/Prepaga?</legend>
+                   <div>
+                        <input type="radio" id="particular" name="grupo">
+                        <label for="particular">Particular</label>
+                   </div>
+                   
+                   <div>
+                        <input type="radio" id="obra" name="grupo">
+                        <label for="obra">Obra Social</label>
+                    </div>
+                   <div>
+                        <input type="radio" id="prep" name="grupo">
+                        <label for="prep">Prepaga</label>
+                        
+                    </div>
+                   
+                </fieldset> 
+            </div>            
+            <button class="grid__enviar" type="submit">Enviar</button>
+        </form>
+   </main> 
+   <footer>
+    <div class="contenedor">
+        <div class="contenedor__contacto">
+            <div class="contenedor__contacto__ubicacion">
+                <div class="contenedor__contacto__ubicacion__encabezado">
+                    <h4 class="contenedor__contacto__ubicacion__encabezado--titulo">Centros de atención <i class="fa-solid fa-location-dot"></i>
+                    </h4>
+                </div>
+
+                <div class="contenedor__contacto__ubicacion__mapas">
+                    <div class="contenedor__contacto__ubicacion__mapas__cards">
+                        <p class="contenedor__contacto__ubicacion__mapas__cards--titulo">Nordelta</p>
+                        <iframe 
+                            class="contenedor__contacto__ubicacion__mapas__cards--iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26336.557645499794!2d-58.666463479834334!3d-34.399574142248326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca16f9b3a729b%3A0x9222c9f6c643c79a!2sCentro%20medico%20nordelta!5e0!3m2!1ses-419!2sar!4v1654133646349!5m2!1ses-419!2sar"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <div class="contenedor__contacto__ubicacion__mapas__cards">
+                        <p class="contenedor__contacto__ubicacion__mapas__cards--titulo">San Isidro</p>
+                        <iframe
+                            class="contenedor__contacto__ubicacion__mapas__cards--iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210521.3406984122!2d-58.651449790356565!3d-34.46747848117602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1e1c03385cf%3A0xc49ce64c2c847b26!2sSentirse%20Amada!5e0!3m2!1ses-419!2sar!4v1654124394409!5m2!1ses-419!2sar"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <div class="contenedor__contacto__ubicacion__mapas__cards">
+                        <p class="contenedor__contacto__ubicacion__mapas__cards--titulo">Pacheco</p>
+                        <iframe
+                            class="contenedor__contacto__ubicacion__mapas__cards--iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.663965141331!2d-58.638026085200444!3d-34.46067705744981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5b5c18c1db3%3A0x7f00afeb652bda51!2sBioimagenes%20Casanova!5e0!3m2!1ses-419!2sar!4v1654133158910!5m2!1ses-419!2sar"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor__contacto__redessociales">
+                <!-- <h4>Seguinos en redes sociales.</h4> -->
+                <a class="contenedor__contacto__redessociales--contico" href="https://www.instagram.com/fleboestetica.draleyla/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="contenedor__contacto__redessociales--contico" href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a class="contenedor__contacto__redessociales--contico" href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <div class="whatsaap"><a href="https://wa.me/541169811539" class="contenedor__contacto__redessociales--contico">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    </a></div>
+                
+            </div>
+        </div>
+        <div class="contenedor__copy">
+            <p class="contenedor__copy--texto">Copyright 2022. Todos los derechos reservados. ©</p>
+        </div>
+        
+    </div>
+    <div class="flotante">
+        <a href="https://wa.me/541169811539" class="flotante__contico whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+</footer>
+
+</body>
+
+</html>
