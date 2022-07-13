@@ -1,0 +1,22 @@
+{
+  "name": "fleboestetica-draleyla-maidana--martin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass sass/index.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinmaidana/2da-entrega.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinmaidana/2da-entrega/issues"
+  },
+  "homepage": "https://github.com/martinmaidana/2da-entrega#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

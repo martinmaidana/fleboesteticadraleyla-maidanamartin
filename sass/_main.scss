@@ -1,0 +1,200 @@
+main {
+    margin: 40px auto;
+    min-height: 400px;
+}
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 0 35px;   
+    &__text{
+        display: inline-block;
+        text-align: justify;
+        width: auto;
+        padding: 0 10px;
+    } 
+    &__video{
+        display: inline-block;
+        width: 100%;        
+        border-radius: 10px;
+        box-shadow: 0px 7px 10px $boxshadow;
+        border: 1px solid $bordercolor;
+        
+    }
+   
+  }
+
+// main de contacto
+#Formulario div input, #Formulario div textarea, #Formulario div select {
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    width: 100%;
+    background-image: linear-gradient(to right top, #d2d6cd, #dae0d4, #e2eadb, #eaf5e3, #f2ffea);
+}
+
+#Formulario div label {
+    display: block;
+}
+
+#Formulario div fieldset{
+    padding: 10px;
+
+}
+#Formulario div fieldset div input, #Formulario div fieldset div label{
+    display:inline;
+    width: auto;
+}
+#Formulario button{
+    margin-top: 10px;
+    height: 40px;
+    width: 150px;
+}
+.grid{
+    &__nya{
+       grid-area: nya; 
+    }
+    &__numero{
+        grid-area:numero;
+    }
+    &__email{
+        grid-area: email;
+    }
+    &__consulta{
+      grid-area: consulta;  
+    }
+    &__centromedico{
+        grid-area:centromedico;
+        margin-right: 16px;
+    }
+    &__news{
+        grid-area:news;
+    }
+    &__seguro{
+        grid-area:seguro ;
+        height: 175px;
+        width: 289px;
+        width: calc(100% - 40px);
+        margin: 0 20px;
+    }
+    &__enviar{
+        grid-area: enviar;
+    justify-self: end;
+    }
+    &__formulario{
+        display:grid;
+        grid-template-areas:
+        "nya seguro seguro"
+        "numero seguro seguro"
+        "email seguro seguro"
+        "consulta consulta consulta"
+        "centromedico news ."
+        ". . enviar";
+        justify-content: center;
+    }
+}
+
+/* fin de Contacto */
+/* inicio de cuidados */
+.cuidados__link {
+    width: 193px;
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 15px;
+    flex-direction: column;
+}
+.cuidados__link:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.cuidados__link div img {
+    width: 100%;
+}
+
+main.cuidados {
+    display: grid;
+    font-family: arial;
+
+    width:auto;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+.cuidados__link__text{
+    text-align: center;
+    margin-top: 4px;
+}
+/* fin de cuidados */
+
+/* quienes somos. main  */
+
+
+.presentacion__cv{
+    display:flex;
+    height: 550px;
+}
+.presentacion__cv__imagen{
+    width: 20%;
+    margin: 7px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.cv--imagen{
+    /* background-color:aqua; */
+    width:100%;
+}
+
+.presentacion__cv__texto{
+    width: 80%;
+    text-align:justify;
+    overflow: auto;
+    font-family: "Arial";
+    text-align: left;
+}
+.cv__texto--titulo{
+    font-weight: 700;
+
+}
+/* Fin de quienes somos */
+
+/* Empieza tratamiento */
+
+
+.tarjeta-horizontal {
+    width: 700px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+
+}
+.tarjeta-horizontal p{
+    margin-bottom: 17px;
+}
+
+.tarjeta-horizontal div img{
+    height: 100%;
+}
+.tarjeta-horizontal:hover {
+    /* transition: 0.6s; */
+    /* transition-timing-function: ease-in;  */
+    box-shadow: none;
+    animation: tarjetahorizontal 0.5s linear 0s forwards;
+}
+@keyframes tarjetahorizontal{
+    0% {  transform:none;}
+    100%{
+    transform:scale(1.1);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+}
+/* fin de tratamientos */
+    

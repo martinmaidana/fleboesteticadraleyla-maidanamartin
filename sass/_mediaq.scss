@@ -1,0 +1,140 @@
+/* aplicando grids y media queeries 748 */
+@media (max-width:1019px){
+    .contenedor__contacto__ubicacion__mapas {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+@media (max-width:757px) {
+    .contenedor__contacto__ubicacion__mapas{
+        flex-direction: column;
+    }
+    .tarjeta-horizontal {
+        width: 90%;
+    }
+    .tarjeta-horizontal div:nth-child(2) {
+        overflow-y: scroll;
+    }
+ span, .header__content--flebo{
+        display:none;
+    }
+  .nav__content{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1 fr);
+        justify-items: center;
+    }
+    .li{
+        display:grid;
+        justify-items: center;
+        align-items: center;
+        }
+    .contenido{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+        }
+    div.contenido{
+        display:grid;
+        justify-items:center;
+        width: 90%;
+        }
+    .contenido__video {
+        display: inline-block;
+        width: 100%;}
+    
+    main{
+        display: grid;
+        width: 100%;
+        justify-items: center;
+        }
+
+    main.cuidados{
+    display: grid;
+    grid-template-columns: repeat(2, 0.3fr);
+    justify-content: center;
+
+    }
+/* .contenedor__contacto__ubicacion__mapas__cards--iframe {
+    width: 120px;
+    height: 70px;
+} */
+/* media Contacto */
+.grid__formulario {
+    display: grid;
+    grid-template-areas:
+        "nya nya"
+        "numero numero"
+        "email email"
+        "seguro seguro"
+        "consulta consulta"
+        "centromedico news "
+        ". enviar";
+    justify-content: center;
+}
+
+/* aplicando grid y media  */
+/* aplicando grids y media queeries al index 484 */
+@media (max-width: 484px) {
+    h1 {
+        font-size: 19px;
+    }
+
+    .contenido__text {
+        margin-left: 0;
+    }
+
+    div.contenido {
+        width: 100%;
+    }
+
+    span, .header__content--flebo{
+           display:none;
+       }
+     .nav__content{
+           display:flex;
+           flex-direction: column;
+           align-items: center;
+
+       }
+       .li{
+           display:grid;
+           justify-items: center;
+           align-items: center;
+        }
+       .contenido{
+           display: grid;
+           grid-template-columns: repeat(1, 1fr);
+           grid-gap: 40px;
+           width: 90%;
+        }
+       div.contenido{
+           display:grid;
+           justify-items:center;
+       }
+       .contenido__video {
+           display: inline-block;
+           width: 100%;
+           }
+       /* ojo con este main */
+       .main{
+           display: grid;
+           grid-template-columns: repeat(2, 2,5fr 1fr);
+           }
+
+   main.cuidados{
+       display: grid;
+       grid-template-columns: repeat(2, 0.3fr);
+       align-items: center;
+       height: 862px;
+    }
+   .parallax{
+     height: 302px;
+   }
+   .flotante__contico--whatsapp{
+    display:block;
+}
+.flotante{
+    display:none;
+}}
+}
