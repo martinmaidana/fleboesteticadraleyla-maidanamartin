@@ -11,14 +11,15 @@
     }
     .tarjeta-horizontal {
         width: 90%;
+        & div:nth-child(2){
+            overflow-y: scroll;
+        }
     }
-    .tarjeta-horizontal div:nth-child(2) {
-        overflow-y: scroll;
-    }
- span, .header__content--flebo{
+    
+    span, .header__content--flebo{
         display:none;
     }
-  .nav__content{
+    .nav__content{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1 fr);
@@ -33,15 +34,16 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 40px;
+        &__video{
+            display: inline-block;
+            width: 100%;
+        }
         }
     div.contenido{
         display:grid;
         justify-items:center;
         width: 90%;
         }
-    .contenido__video {
-        display: inline-block;
-        width: 100%;}
     
     main{
         display: grid;
@@ -55,10 +57,7 @@
     justify-content: center;
 
     }
-/* .contenedor__contacto__ubicacion__mapas__cards--iframe {
-    width: 120px;
-    height: 70px;
-} */
+}
 /* media Contacto */
 .grid__formulario {
     display: grid;
@@ -87,54 +86,35 @@
     div.contenido {
         width: 100%;
     }
-
-    span, .header__content--flebo{
-           display:none;
-       }
      .nav__content{
            display:flex;
            flex-direction: column;
            align-items: center;
-
        }
-       .li{
+    .li{
            display:grid;
            justify-items: center;
            align-items: center;
         }
-       .contenido{
-           display: grid;
-           grid-template-columns: repeat(1, 1fr);
-           grid-gap: 40px;
-           width: 90%;
-        }
-       div.contenido{
-           display:grid;
-           justify-items:center;
-       }
-       .contenido__video {
-           display: inline-block;
-           width: 100%;
-           }
-       /* ojo con este main */
-       .main{
+     
+    .main{
            display: grid;
            grid-template-columns: repeat(2, 2,5fr 1fr);
            }
 
-   main.cuidados{
+    main.cuidados{
        display: grid;
        grid-template-columns: repeat(2, 0.3fr);
        align-items: center;
        height: 862px;
-    }
-   .parallax{
+                }
+    .parallax{
      height: 302px;
-   }
-   .flotante__contico--whatsapp{
+            }
+    .flotante__contico--whatsapp{
     display:block;
-}
-.flotante{
+                }
+    .flotante{
     display:none;
-}}
+            }
 }
