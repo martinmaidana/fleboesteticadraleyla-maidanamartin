@@ -19,16 +19,7 @@
                 }    
     }    
 }
-.nav{     
-    ul{
-        list-style-type: none;
-    }
-    &__content{
-        display: flex;
-        justify-content: space-around;
-        font-weight: bold;
-        color:black;
-        &--a{
+.nav-link{
             line-height: 4;
             color: black;
             font-weight: bold;
@@ -38,12 +29,12 @@
                 background-color: #f002;            
             }
         }
-        &--hov{
-            transition: 0.3s;
+.navbar-brand{
+    @extend .nav-link;
+    transition: 0.3s;
             transition-timing-function: ease-in;
             &:hover{
             transform: scale(1.3);
-        }
-    }
 }
 }
+

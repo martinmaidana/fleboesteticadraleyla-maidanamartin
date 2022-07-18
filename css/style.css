@@ -60,27 +60,20 @@ main.tratamientos, main.cuidados {
       margin: 15px;
       font-weight: 700; }
 
-.nav ul {
-  list-style-type: none; }
-
-.nav__content {
-  display: flex;
-  justify-content: space-around;
+.nav-link, .navbar-brand {
+  line-height: 4;
+  color: black;
   font-weight: bold;
-  color: black; }
-  .nav__content--a {
-    line-height: 4;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 10px; }
-    .nav__content--a:hover {
-      background-color: #f002; }
-  .nav__content--hov {
-    transition: 0.3s;
-    transition-timing-function: ease-in; }
-    .nav__content--hov:hover {
-      transform: scale(1.3); }
+  font-size: 15px;
+  border-radius: 10px; }
+  .nav-link:hover, .navbar-brand:hover {
+    background-color: #f002; }
+
+.navbar-brand {
+  transition: 0.3s;
+  transition-timing-function: ease-in; }
+  .navbar-brand:hover {
+    transform: scale(1.3); }
 
 main {
   margin: 40px auto;
