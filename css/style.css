@@ -202,13 +202,13 @@ main.cuidados {
     text-align: left; }
     .presentacion__cv__texto--titulo {
       font-weight: 700; }
-  .presentacion__cv--imagen {
-    width: 100%; }
   .presentacion__cv__imagen {
     width: 20%;
     margin: 7px;
     padding: 10px;
     justify-content: space-between; }
+    .presentacion__cv__imagen--img {
+      width: 100%; }
 
 /* Fin de quienes somos */
 /* Empieza tratamiento */
