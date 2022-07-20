@@ -46,11 +46,17 @@ main {
     display:inline;
     width: auto;
 }
+@mixin btn-enviar($height, $width){
+    height: $height;
+    width: $width;
+ }
 #Formulario button{
-    margin-top: 10px;
-    height: 40px;
-    width: 150px;
+    margin-top: 10px;  
+    @include btn-enviar(40px, 150px);
+    border-radius: 7px;  
 }
+
+
 .grid{
     &__nya{
        grid-area: nya; 
@@ -80,7 +86,7 @@ main {
     }
     &__enviar{
         grid-area: enviar;
-    justify-self: end;
+        justify-self: end;
     }
     &__formulario{
         display:grid;
@@ -94,6 +100,7 @@ main {
         justify-content: center;
     }
 }
+
 
 /* fin de Contacto */
 /* inicio de cuidados */

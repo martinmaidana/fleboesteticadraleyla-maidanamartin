@@ -1,3 +1,27 @@
+.link-instagram {
+  margin: 5px 5px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #c56eeb;
+  text-decoration: none;
+  color: #676c67; }
+
+.link-facebook {
+  margin: 5px 5px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #2d1ae0;
+  text-decoration: none;
+  color: #676c67; }
+
+.link-twitter {
+  margin: 5px 5px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #e938a8;
+  text-decoration: none;
+  color: #676c67; }
+
 * {
   margin: 0;
   padding: 0;
@@ -117,7 +141,8 @@ main {
 #Formulario button {
   margin-top: 10px;
   height: 40px;
-  width: 150px; }
+  width: 150px;
+  border-radius: 7px; }
 
 .grid__nya {
   grid-area: nya; }
