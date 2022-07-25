@@ -103,10 +103,10 @@ main {
 
 
 /* fin de Contacto */
-/* inicio de cuidados */
+/* inicio de tratamientos */
 main.cuidados{
     display: grid;
-    // font-family: arial;
+    font-family: arial;
     width:auto;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
@@ -137,7 +137,6 @@ main.cuidados{
       padding: 5px;
       text-decoration: none;
       color: black;
-    //   border: 1px solid grey;
       border-radius: 10px; 
       border-color: black;
     }
@@ -151,7 +150,7 @@ main.cuidados{
     
 }
 }
-/* fin de cuidados */
+/* fin de tratamientos */
 
 /* quienes somos. main  */
 
@@ -181,7 +180,7 @@ main.cuidados{
 }
 /* Fin de quienes somos */
 
-/* Empieza tratamiento */
+/* Empieza cuidados */
 .tarjeta-horizontal {
     width: 700px;
     height: 150px;

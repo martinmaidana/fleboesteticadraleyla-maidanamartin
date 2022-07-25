@@ -11,6 +11,7 @@
 
 body {
   font-family: 'Cinzel', serif;
+  font-family: 'Roboto', sans-serif;
   margin: 7px; }
 
 footer {
@@ -156,9 +157,10 @@ main {
   justify-content: center; }
 
 /* fin de Contacto */
-/* inicio de cuidados */
+/* inicio de tratamientos */
 main.cuidados {
   display: grid;
+  font-family: arial;
   width: auto;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center; }
@@ -195,7 +197,7 @@ main.cuidados {
       color: white;
       border-radius: 12px; }
 
-/* fin de cuidados */
+/* fin de tratamientos */
 /* quienes somos. main  */
 .presentacion__cv {
   display: flex;
@@ -216,7 +218,7 @@ main.cuidados {
       width: 100%; }
 
 /* Fin de quienes somos */
-/* Empieza tratamiento */
+/* Empieza cuidados */
 .tarjeta-horizontal {
   width: 700px;
   height: 150px;
