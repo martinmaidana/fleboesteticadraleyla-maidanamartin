@@ -4,20 +4,20 @@ $boxshadow: rgba(103, 108, 103, 50%);
 $bordercolor: rgb(103,108,103);
 
 // maps
-$redessociales:(
-    instagram: #c56eeb,
-    facebook: #2d1ae0,
-    twitter: #e938a8,
-);
+// $redessociales:(
+//     instagram: #c56eeb,
+//     facebook: #2d1ae0,
+//     twitter: #e938a8,
+// );
 
-@each $nombre, $color in $redessociales {
-    .link-#{$nombre}{
-        margin:5px 5px;
-        padding: 10px;
-        border-radius: 50%;
-        background-color: $color;
-        text-decoration: none;
-        color: $boxshadow;
-    }
+// @each $nombre, $color in $redessociales {
+//     .link-#{$nombre}{
+//         margin:5px 5px;
+//         padding: 10px;
+//         border-radius: 50%;
+//         background-color: $color;
+//         text-decoration: none;
+//         color: $boxshadow;
+//     }
     
-}
+// } 

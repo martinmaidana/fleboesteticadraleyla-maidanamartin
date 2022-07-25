@@ -1,27 +1,3 @@
-.link-instagram {
-  margin: 5px 5px;
-  padding: 10px;
-  border-radius: 50%;
-  background-color: #c56eeb;
-  text-decoration: none;
-  color: #676c67; }
-
-.link-facebook {
-  margin: 5px 5px;
-  padding: 10px;
-  border-radius: 50%;
-  background-color: #2d1ae0;
-  text-decoration: none;
-  color: #676c67; }
-
-.link-twitter {
-  margin: 5px 5px;
-  padding: 10px;
-  border-radius: 50%;
-  background-color: #e938a8;
-  text-decoration: none;
-  color: #676c67; }
-
 * {
   margin: 0;
   padding: 0;
@@ -183,13 +159,12 @@ main {
 /* inicio de cuidados */
 main.cuidados {
   display: grid;
-  font-family: arial;
   width: auto;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center; }
 
 .cuidados__link {
-  width: 193px;
+  width: 270px;
   display: flex;
   background-color: white;
   border-radius: 4px;
@@ -205,7 +180,20 @@ main.cuidados {
     width: 100%; }
   .cuidados__link__text {
     text-align: center;
-    margin-top: 4px; }
+    margin-top: 8px; }
+    .cuidados__link__text--btn {
+      background-color: #b3afaf;
+      padding: 5px;
+      text-decoration: none;
+      color: black;
+      border-radius: 10px;
+      border-color: black; }
+    .cuidados__link__text--btnsecond {
+      background-color: #9595d1;
+      padding: 5px;
+      text-decoration: none;
+      color: white;
+      border-radius: 12px; }
 
 /* fin de cuidados */
 /* quienes somos. main  */
@@ -216,7 +204,6 @@ main.cuidados {
     width: 80%;
     text-align: justify;
     overflow: auto;
-    font-family: "Arial";
     text-align: left; }
     .presentacion__cv__texto--titulo {
       font-weight: 700; }
@@ -238,7 +225,10 @@ main.cuidados {
   background-color: white;
   border-radius: 4px;
   padding: 15px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  overflow: auto; }
+  .tarjeta-horizontal--title {
+    margin-bottom: 10px; }
   .tarjeta-horizontal p {
     margin-bottom: 17px; }
   .tarjeta-horizontal div img {

@@ -106,14 +106,14 @@ main {
 /* inicio de cuidados */
 main.cuidados{
     display: grid;
-    font-family: arial;
+    // font-family: arial;
     width:auto;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     
 }
 .cuidados__link {
-    width: 193px;
+    width: 270px;
     display: flex;
     background-color: white;
     border-radius: 4px;
@@ -131,7 +131,24 @@ main.cuidados{
             }
     &__text{
     text-align: center;
-    margin-top: 4px;
+    margin-top: 8px;
+    &--btn{
+      background-color: rgb(179, 175, 175);
+      padding: 5px;
+      text-decoration: none;
+      color: black;
+    //   border: 1px solid grey;
+      border-radius: 10px; 
+      border-color: black;
+    }
+    &--btnsecond{
+        background-color: rgb(149, 149, 209);
+        padding: 5px;
+        text-decoration: none;
+        color: white;
+        border-radius: 12px; 
+      }
+    
 }
 }
 /* fin de cuidados */
@@ -146,7 +163,7 @@ main.cuidados{
         width: 80%;
         text-align:justify;
         overflow: auto;
-        font-family: "Arial";
+        // font-family: "Arial";
         text-align: left;
         &--titulo{
             font-weight: 700;
@@ -174,6 +191,10 @@ main.cuidados{
     border-radius: 4px;
     padding: 15px;
     margin-bottom: 15px;
+    overflow: auto;
+    &--title{
+        margin-bottom: 10px;
+    }
     p{
         margin-bottom: 17px;
     }
