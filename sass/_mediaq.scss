@@ -104,9 +104,8 @@
 
     main.cuidados{
        display: grid;
-       grid-template-columns: repeat(2, 0.3fr);
+       grid-template-columns: 1fr;
        align-items: center;
-       height: 862px;
                 }
     .parallax{
      height: 302px;

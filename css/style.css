@@ -227,8 +227,6 @@ main.cuidados {
   padding: 15px;
   margin-bottom: 15px;
   overflow: auto; }
-  .tarjeta-horizontal--title {
-    margin-bottom: 10px; }
   .tarjeta-horizontal p {
     margin-bottom: 17px; }
   .tarjeta-horizontal div img {
@@ -371,9 +369,8 @@ main.cuidados {
     grid-template-columns: repeat(2, 2, 5fr 1fr); }
   main.cuidados {
     display: grid;
-    grid-template-columns: repeat(2, 0.3fr);
-    align-items: center;
-    height: 862px; }
+    grid-template-columns: 1fr;
+    align-items: center; }
   .parallax {
     height: 302px; }
   .flotante__contico--whatsapp {
