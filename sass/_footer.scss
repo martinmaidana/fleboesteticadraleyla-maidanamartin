@@ -1,72 +1,72 @@
-.contenedor{
-    &__contacto{
-        grid-area:contenedor__contacto ;
-        display:block;
-            &__ubicacion{
-                &__encabezado--titulo{
-                    text-align: center;
-                    margin:10px;
-                }
-                
-                &__mapas{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    align-content: center;
-                    margin:10px;
-
-                    &__cards{
-                        &--titulo{
-                            text-align: center;
-                        }
+.contenedor {
+    &__contacto {
+        grid-area: contenedor__contacto;
+        display: block;
+        &__ubicacion {
+            &__encabezado--titulo {
+                text-align: center;
+                margin: 2px;
+            }
+            &__mapas {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+                margin: 10px;
+                &__cards {
+                    &--titulo {
+                        text-align: center;
                     }
                 }
             }
-            &__redessociales{
+        }
+
+        &__redessociales {
             display: flex;
-             margin: 50px 0px;
             align-items: center;
+            
             justify-content: center;
-                &--contico{
-                    color: rgb(152, 144, 144);
-                    font-size: 50px;
-                    margin: 20px;
-                            }
-                        }
-                }
-        &__copy{
-            grid-area: contenedor__copy;
-            height: 5px;
-                &--texto{
-                text-align: center;
-                font-weight: 900;
-                margin:20px;
-                border-top: 2px solid #0005;
-                        }
-                }
+            &--contico {
+                color: rgb(152, 144, 144);
+                font-size: 50px;
+                margin: 0px 12px;
+            }
+        }
+    }
+
+    &__copy {
+        grid-area: contenedor__copy;
+        height: 5px;
+        &--texto {
+            text-align: center;
+            font-weight: 900;
+            margin: 2px;
+            border-top: 2px solid #0005;
+        }
+    }
 }
 
 .flotante {
-    position:fixed;
+    position: fixed;
     bottom: 0px;
     right: 0px;
-    &__contico--whatsapp{
+    &__contico--whatsapp {
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        width:80px;
-        height:80px;
-        border-radius:50%;
-        background-color:green;
-            color: white;
-            font-size: 50px;
-            margin: 20px;
-            &:hover{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: green;
+        color: white;
+        font-size: 50px;
+        margin: 20px;
+        &:hover {
             transform: scale(1.3);
         }
     }
 }
 
-.whatsaap{
-    display:none
+.whatsaap {
+    display: none
 }

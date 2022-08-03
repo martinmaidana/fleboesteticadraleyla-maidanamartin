@@ -1,32 +1,37 @@
 main {
-    margin: 40px auto;
-    min-height: 400px;
+    margin: 5px auto;
+    min-height: 340px;
 }
+
 .contenido {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    padding: 0 35px;   
-    &__text{
+    padding: 0 35px;
+
+    &__text {
         display: inline-block;
         text-align: justify;
         width: auto;
         padding: 0 10px;
-    } 
-    &__video{
+    }
+
+    &__video {
         display: inline-block;
-        width: 100%;        
+        width: 100%;
         border-radius: 10px;
         box-shadow: 0px 7px 10px $boxshadow;
         border: 1px solid $bordercolor;
-        
+
     }
-   
-  }
+
+}
 
 // main de contacto
-#Formulario div input, #Formulario div textarea, #Formulario div select {
+#Formulario div input,
+#Formulario div textarea,
+#Formulario div select {
     padding: 4px;
     border-radius: 4px;
     border: 1px solid grey;
@@ -38,80 +43,90 @@ main {
     display: block;
 }
 
-#Formulario div fieldset{
+#Formulario div fieldset {
     padding: 10px;
 
 }
-#Formulario div fieldset div input, #Formulario div fieldset div label{
-    display:inline;
+
+#Formulario div fieldset div input,
+#Formulario div fieldset div label {
+    display: inline;
     width: auto;
 }
-@mixin btn-enviar($height, $width){
+
+@mixin btn-enviar($height, $width) {
     height: $height;
     width: $width;
- }
-#Formulario button{
-    margin-top: 10px;  
+}
+
+#Formulario button {
+    margin-top: 10px;
     @include btn-enviar(40px, 150px);
-    border-radius: 7px;  
+    border-radius: 7px;
 }
 
 
-.grid{
-    &__nya{
-       grid-area: nya; 
+.grid {
+    &__nya {
+        grid-area: nya;
     }
-    &__numero{
-        grid-area:numero;
+
+    &__numero {
+        grid-area: numero;
     }
-    &__email{
+
+    &__email {
         grid-area: email;
     }
-    &__consulta{
-      grid-area: consulta;  
+
+    &__consulta {
+        grid-area: consulta;
     }
-    &__centromedico{
-        grid-area:centromedico;
+
+    &__centromedico {
+        grid-area: centromedico;
         margin-right: 16px;
     }
-    &__news{
-        grid-area:news;
+
+    &__news {
+        grid-area: news;
     }
-    &__seguro{
-        grid-area:seguro ;
+
+    &__seguro {
+        grid-area: seguro;
         height: 175px;
         width: 289px;
         width: calc(100% - 40px);
         margin: 0 20px;
     }
-    &__enviar{
+
+    &__enviar {
         grid-area: enviar;
         justify-self: end;
     }
-    &__formulario{
-        display:grid;
+
+    &__formulario {
+        display: grid;
         grid-template-areas:
-        "nya seguro seguro"
-        "numero seguro seguro"
-        "email seguro seguro"
-        "consulta consulta consulta"
-        "centromedico news ."
-        ". . enviar";
+            "nya seguro seguro"
+            "numero seguro seguro"
+            "email seguro seguro"
+            "consulta consulta consulta"
+            "centromedico news ."
+            ". . enviar";
         justify-content: center;
     }
 }
-
-
 /* fin de Contacto */
 /* inicio de tratamientos */
 main.cuidados{
     display: grid;
     // font-family: arial;
-    width:auto;
-    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    grid-template-columns: repeat( 3, 1fr);
     justify-items: center;
-    
 }
+
 .cuidados__link {
     width: 270px;
     display: flex;
@@ -120,64 +135,66 @@ main.cuidados{
     padding: 15px;
     margin: 15px;
     flex-direction: column;
-    &:hover{
+    &:hover {
         transform: scale(1.1);
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
         transition: 0.3s;
         transition-timing-function: ease-in;
     }
+
     div img {
-    width: 100%;
-            }
-    &__text{
-    text-align: center;
-    margin-top: 8px;
-    &--btn{
-      background-color: rgb(179, 175, 175);
-      padding: 5px;
-      text-decoration: none;
-      color: black;
-      border-radius: 10px; 
-      border-color: black;
+        width: 100%;
     }
-    &--btnsecond{
-        background-color: rgb(149, 149, 209);
-        padding: 5px;
-        text-decoration: none;
-        color: white;
-        border-radius: 12px; 
-      }
-    
+
+    &__text {
+        text-align: center;
+        margin-top: 8px;
+        &--btn {
+            background-color: rgb(179, 175, 175);
+            padding: 5px;
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+            border-color: black;
+        }
+        &--btnsecond {
+            background-color: rgb(149, 149, 209);
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+            border-radius: 12px;
+        }
+    }
 }
-}
+
 /* fin de tratamientos */
 
 /* quienes somos. main  */
 
 
-.presentacion__cv{
-    display:flex;
-    height: 550px;
-    &__texto{
+.presentacion__cv {
+    display: flex;
+    &__texto {
         width: 80%;
-        text-align:justify;
+        text-align: justify;
         overflow: auto;
         // font-family: "Arial";
         text-align: left;
-        &--titulo{
+        &--titulo {
             font-weight: 700;
         }
     }
-    &__imagen{
+    &__imagen {
         width: 20%;
         margin: 7px;
         padding: 10px;
         justify-content: space-between;
-        &--img{
+        &--img {
             width: 100%;
         }
-            }
+    }
 }
+
 /* Fin de quienes somos */
 
 /* Empieza cuidados */
@@ -191,26 +208,26 @@ main.cuidados{
     padding: 15px;
     margin-bottom: 15px;
     overflow: auto;
-    p{
+    p {
         margin-bottom: 17px;
     }
-    div img{
+    div img {
         height: 100%;
     }
-    &:hover{
+    &:hover {
         box-shadow: none;
         animation: tarjetahorizontal 0.5s linear 0s forwards;
     }
-    @keyframes tarjetahorizontal{
-    0% {  transform:none;}
-    100%{
-    transform:scale(1.1);
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    @keyframes tarjetahorizontal {
+        0% {
+            transform: none;
+        }
+        100% {
+            transform: scale(1.1);
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        }
     }
-}
-
 }
 
 
 /* fin de tratamientos */
-    

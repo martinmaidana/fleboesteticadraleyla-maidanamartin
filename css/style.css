@@ -15,7 +15,7 @@ body {
   margin: 7px; }
 
 footer {
-  margin: 40px; }
+  margin: 9px; }
 
 h1, h2, h3 {
   text-align: center;
@@ -37,7 +37,8 @@ span {
 img {
   display: block; }
 
-main.tratamientos, main.cuidados {
+main.tratamientos,
+main.cuidados {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,8 +48,8 @@ main.tratamientos, main.cuidados {
 .header {
   background-color: none;
   color: white;
-  padding: 10px 9px;
-  margin: 50px; }
+  padding: 2px 2px;
+  margin: 10px; }
   .header__content {
     max-width: max-content;
     margin: 5px auto; }
@@ -57,9 +58,6 @@ main.tratamientos, main.cuidados {
       display: block;
       width: 140px;
       height: 140px; }
-    .header__content__text--title {
-      margin: 15px;
-      font-weight: 700; }
 
 .nav-link, .navbar-brand {
   line-height: 4;
@@ -77,8 +75,8 @@ main.tratamientos, main.cuidados {
     transform: scale(1.3); }
 
 main {
-  margin: 40px auto;
-  min-height: 400px; }
+  margin: 5px auto;
+  min-height: 340px; }
 
 .contenido {
   display: grid;
@@ -98,7 +96,9 @@ main {
     box-shadow: 0px 7px 10px #676c67;
     border: 1px solid #676c67; }
 
-#Formulario div input, #Formulario div textarea, #Formulario div select {
+#Formulario div input,
+#Formulario div textarea,
+#Formulario div select {
   padding: 4px;
   border-radius: 4px;
   border: 1px solid grey;
@@ -111,7 +111,8 @@ main {
 #Formulario div fieldset {
   padding: 10px; }
 
-#Formulario div fieldset div input, #Formulario div fieldset div label {
+#Formulario div fieldset div input,
+#Formulario div fieldset div label {
   display: inline;
   width: auto; }
 
@@ -161,7 +162,7 @@ main {
 main.cuidados {
   display: grid;
   width: auto;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center; }
 
 .cuidados__link {
@@ -199,8 +200,7 @@ main.cuidados {
 /* fin de tratamientos */
 /* quienes somos. main  */
 .presentacion__cv {
-  display: flex;
-  height: 550px; }
+  display: flex; }
   .presentacion__cv__texto {
     width: 80%;
     text-align: justify;
@@ -249,7 +249,7 @@ main.cuidados {
   display: block; }
   .contenedor__contacto__ubicacion__encabezado--titulo {
     text-align: center;
-    margin: 10px; }
+    margin: 2px; }
   .contenedor__contacto__ubicacion__mapas {
     display: flex;
     justify-content: space-between;
@@ -260,13 +260,12 @@ main.cuidados {
       text-align: center; }
   .contenedor__contacto__redessociales {
     display: flex;
-    margin: 50px 0px;
     align-items: center;
     justify-content: center; }
     .contenedor__contacto__redessociales--contico {
       color: #989090;
       font-size: 50px;
-      margin: 20px; }
+      margin: 0px 12px; }
 
 .contenedor__copy {
   grid-area: contenedor__copy;
@@ -274,7 +273,7 @@ main.cuidados {
   .contenedor__copy--texto {
     text-align: center;
     font-weight: 900;
-    margin: 20px;
+    margin: 2px;
     border-top: 2px solid #0005; }
 
 .flotante {
@@ -302,7 +301,15 @@ main.cuidados {
 @media (max-width: 1019px) {
   .contenedor__contacto__ubicacion__mapas {
     flex-wrap: wrap;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+  .presentacion__cv__imagen {
+    width: 300px; } }
+
+@media (max-width: 991px) {
+  .header--nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start; } }
 
 @media (max-width: 757px) {
   .contenedor__contacto__ubicacion__mapas {
@@ -311,7 +318,8 @@ main.cuidados {
     width: 90%; }
     .tarjeta-horizontal div:nth-child(2) {
       overflow-y: scroll; }
-  span, .header__content--flebo {
+  span,
+  .header__content--flebo {
     display: none; }
   .nav__content {
     display: grid;
@@ -325,10 +333,10 @@ main.cuidados {
   .contenido {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 40px; }
-    .contenido__video {
-      display: inline-block;
-      width: 100%; }
+    grid-gap: 15px; }
+  __video {
+    display: inline-block;
+    width: 100%; }
   div.contenido {
     display: grid;
     justify-items: center;
@@ -340,13 +348,16 @@ main.cuidados {
   main.cuidados {
     display: grid;
     grid-template-columns: repeat(2, 0.3fr);
+    justify-content: center; }
+  .presentacion__cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  /* media Contacto */
+  .grid__formulario {
+    display: grid;
+    grid-template-areas: "nya nya" "numero numero" "email email" "seguro seguro" "consulta consulta" "centromedico news " ". enviar";
     justify-content: center; } }
-
-/* media Contacto */
-.grid__formulario {
-  display: grid;
-  grid-template-areas: "nya nya" "numero numero" "email email" "seguro seguro" "consulta consulta" "centromedico news " ". enviar";
-  justify-content: center; }
 
 /* aplicando grid y media  */
 /* aplicando grids y media queeries al index 484 */
@@ -377,4 +388,19 @@ main.cuidados {
   .flotante__contico--whatsapp {
     display: block; }
   .flotante {
-    display: none; } }
+    display: none; }
+  h1, h2, h3 {
+    text-align: start;
+    color: #515151;
+    letter-spacing: 5px;
+    line-height: 1; }
+  .header__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 28px; }
+  .header__content--logo {
+    width: 80px;
+    height: 80px;
+    margin-top: 12px; } }
